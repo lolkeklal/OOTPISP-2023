@@ -1,13 +1,13 @@
-name: Check code duplication
+name: duplication
 
 on: pull_request
 
 jobs:
   duplicate-code-check:
-    name: Check for duplicate code
+    name: duplicate
     runs-on: ubuntu-latest
     steps:
-      - name: Check for duplicate code
+      - name: duplicate
         uses: platisd/duplicate-code-detection-tool@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
