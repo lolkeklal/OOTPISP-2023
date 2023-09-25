@@ -1,6 +1,6 @@
 name: Duplicate code
 
-on: pull_request
+on: pull_request_target
 
 jobs:
   duplicate-code-check:
@@ -11,10 +11,9 @@ jobs:
         uses: platisd/duplicate-code-detection-tool@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          file_extensions: "h, cpp"
-          # Only report similarities above 5%
+          # Only report similarities above 50%
           ignore_below: 50
           # If a file is more than 70% similar to another, then the job fails
-          fail_above: 90
-          # If a file is more than 15% similar to another, show a warning symbol in the report
-          warn_above: 55
+          fail_above: 70
+          # If a file is more than 51% similar to another, show a warning symbol in the report
+          warn_above: 51
