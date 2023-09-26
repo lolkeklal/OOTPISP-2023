@@ -1,0 +1,16 @@
+{
+    "LABEL": {
+      "name": "title needs [task]",
+      "color": "EEEEEE"
+    },
+    "CHECKS": {
+      "prefixes": ["Add task_01", "Add task_02", "Add task_03", "Add task_04", "Add task_05", "Add task_06",  "Add task_07", "Add task_08", "[doc]", "[github-actions]" ],
+      "regexpFlags": "i",
+      "ignoreLabels" : ["ignore-pr-title-check", "pass"]
+    },
+    "MESSAGES": {
+      "success": "All OK",
+  "failure": "Missing type in the title of the pull request. [task_01] - [task_06], [doc].\nExample: '[task_01] Add problem solution'",
+      "notice": ""
+    }
+  }
