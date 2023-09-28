@@ -1,5 +1,7 @@
 # Отчет по лабораторной работе №1
 
+## Использование библиотеки элементов графического интерфейса Qt
+
 ` Мисиюк Алексей Сергеевич (ПО-9) `
 
 ## Цель лабораторной работы
@@ -48,7 +50,9 @@
 Проект можно найти здесь: *[https://github.com/11ALX11/OOTPiSP/tree/master/labrab8](https://github.com/11ALX11/OOTPiSP/tree/master/labrab8)*
 
 main.cpp:
+
 ```c++
+
 //#include "mainwindow.h"
 
 #include <QApplication>
