@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef COLOR_CHANGER_H
+#define COLOR_CHANGER_H
 
 #include <QMainWindow>
 #include <QPlainTextEdit>
@@ -33,4 +33,4 @@ private:
     Ui::MainWindow *ui;
     int red{0}, green{0}, blue{0};
 };
-#endif // MAINWINDOW_H
+#endif // COLOR_CHANGER_H

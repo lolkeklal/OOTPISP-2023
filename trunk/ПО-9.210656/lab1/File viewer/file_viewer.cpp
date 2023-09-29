@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "file_viewer.h"
 #include "ui_mainwindow.h"
 #include <QVBoxLayout>
 #include <QPushButton>

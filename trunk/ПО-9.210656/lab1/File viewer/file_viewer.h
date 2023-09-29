@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef FILE_VIEWER_H
+#define FILE_VIEWER_H
 
 #include <QMainWindow>
 #include <QPlainTextEdit>
@@ -24,4 +24,4 @@ public slots:
     void openFile();
 
 };
-#endif // MAINWINDOW_H
+#endif // FILE_VIEWER_H

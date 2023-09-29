@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "color_changer.h"
 
 #include <QApplication>
 
