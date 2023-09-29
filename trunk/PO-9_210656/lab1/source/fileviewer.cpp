@@ -1,12 +1,12 @@
-#include "file_viewer.h"
-#include "ui_mainwindow.h"
+#include "fileviewer.h"
+#include "ui_fileviewer.h"
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QFileDialog>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+FileViewer::FileViewer(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::FileViewer)
 {
     ui->setupUi(this);
 
@@ -20,17 +20,15 @@ MainWindow::MainWindow(QWidget *parent)
     VBLayout->addWidget(text);
     VBLayout->addWidget(button);
 
-    connect(button, &QPushButton::clicked, this, &MainWindow::openFile);
-
+    connect(button, &QPushButton::clicked, this, &FileViewer::openFile);
 }
 
-MainWindow::~MainWindow()
+FileViewer::~FileViewer()
 {
     delete ui;
 }
 
-
-void MainWindow::openFile(){
+void FileViewer::openFile(){
     QString fileName = QFileDialog::getOpenFileName(this);
     QFile file(fileName);
     if (!file.open(QIODevice::ReadOnly))

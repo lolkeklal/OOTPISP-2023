@@ -1,23 +1,22 @@
-#ifndef COLOR_CHANGER_H
-#define COLOR_CHANGER_H
+#ifndef COLORCHANGER_H
+#define COLORCHANGER_H
 
 #include <QMainWindow>
 #include <QPlainTextEdit>
 #include <QSpinBox>
 #include <QSlider>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
+namespace Ui {
+class ColorChanger;
+}
 
-class MainWindow : public QMainWindow
+class ColorChanger : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-
+    explicit ColorChanger(QWidget *parent = nullptr);
+    ~ColorChanger();
     void setColor();
     QPlainTextEdit* textEdit;
     QSpinBox* spinBoxes;
@@ -30,7 +29,8 @@ public slots:
     void setBlue(int b);
 
 private:
-    Ui::MainWindow *ui;
+    Ui::ColorChanger *ui;
     int red{0}, green{0}, blue{0};
 };
-#endif // COLOR_CHANGER_H
+
+#endif // COLORCHANGER_H
