@@ -4,7 +4,7 @@
       "color": "EEEEEE"
     },
     "CHECKS": {
-      "prefixes": ["Add task_01", "Add task_02", "Add task_03", "Add task_04", "Add task_05", "Add task_06",  "Add task_07", "Add task_08", "[doc]", "[github-actions]" ],
+      "prefixes": ["[task_01]", "[task_02]", "[task_03]", "[task_04]", "[task_05]", "[task_06]",  "[task_07]", "[task_08]", "[doc]", "[github-actions]" ],
       "regexpFlags": "i",
       "ignoreLabels" : ["ignore-pr-title-check", "pass"]
     },
