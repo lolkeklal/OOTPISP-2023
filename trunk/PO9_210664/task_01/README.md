@@ -68,8 +68,6 @@
 
 ## Код программы
 
-Проект можно найти здесь: *<https://github.com/11ALX11/OOTPiSP/tree/master/labrab8>*
-
 main.cpp:
 
 ```c++
