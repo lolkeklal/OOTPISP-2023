@@ -1,5 +1,6 @@
 ﻿#include "mainwindow.h"
-
+or
+#include "textreviwer.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
