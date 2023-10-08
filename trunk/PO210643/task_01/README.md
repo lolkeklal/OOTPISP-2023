@@ -15,6 +15,19 @@
 + работа с компоновщиками
 + создание приложения ColorViewer
 + использование QFileDialog - создание простейшего обозревателя текста
+#### Этот файл является общим для двух приложений ####
+
+main.cpp
+``` c++
+...
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
+}
+```
 #### Создание приложения ColorViewer ####
 mainwindow.h
 
@@ -47,17 +60,6 @@ public slots:
     void setBlue(int b);
 };
 ...
-```
-main.cpp
-``` c++
-...
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
-}
 ```
 mainwindow.cpp
 ``` c++
@@ -201,17 +203,8 @@ public slots:
     void textreviwer();
 };
 ```
-main.cpp
-``` c++
-...
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    TextReviwer w;
-    w.show();
-    return a.exec();
-}
-```
+
+
 textreviwer.cpp
 ``` c++
 #include "textreviwer.h"
