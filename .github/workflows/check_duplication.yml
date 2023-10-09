@@ -18,3 +18,8 @@ jobs:
           fail_above: 90
           # If a file is more than 51% similar to another, show a warning symbol in the report
           warn_above: 91
+          
+           # Этот шаг выполняет анализ SonarScanner
+        - name: SonarScanner analysis
+        if: false  # Отключаем выполнение анализа в CI
+        run: sonar-scanner --define sonar.cfamily.build-wrapper-output="build_wrapper_output_directory" --define sonar.pullrequest.key=31 --define sonar.scm.revision=c8a6ddbcc3f679cee93e796a7210b91ca475f3c6
