@@ -11,5 +11,6 @@ add_executable(TextEditor
         texteditor.cpp
         texteditor.ui
         texteditor.h
+        icons.qrc
 )
 target_link_libraries(TextEditor Qt${QT_VERSION_MAJOR}::Widgets)
