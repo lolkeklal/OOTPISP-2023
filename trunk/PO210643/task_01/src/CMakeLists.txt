@@ -19,4 +19,4 @@ add_executable( task_01
         textreviwer.ui
 )
 
-target_link_libraries(lab1 Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(task_01 Qt${QT_VERSION_MAJOR}::Widgets)
