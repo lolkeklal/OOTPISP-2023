@@ -1,3 +1,11 @@
+cmake_minimum_required(VERSION 3.26)
+
+project(task_01)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
 set(CMAKE_PREFIX_PATH $ENV{QTDIR})
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
