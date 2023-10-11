@@ -142,7 +142,7 @@ void MainWindow::setColor(){
 
 #### Результат программы color viewer ####
 
-![img_01](./images/img_01.png)
+![img_01](images/img_01.png)
 
 #### Реализация простейшего обозревателя файлов ####
 
@@ -185,7 +185,7 @@ void TextBox::openFile(){
 
 #### Результат программы ####
 
-![img_02](./images/img_02.png)
+![img_02](images/img_02.png)
 
 #### Вывод ####
 
