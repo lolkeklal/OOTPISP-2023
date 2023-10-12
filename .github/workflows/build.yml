@@ -19,7 +19,7 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v3
       - name: Install sonar-scanner and build-wrapper
-        uses: sonarsource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-c-cpp@v2
       - name: Run build-wrapper
         run: |
           cmake . -B build	  
