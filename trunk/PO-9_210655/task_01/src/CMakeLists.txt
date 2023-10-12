@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(laba8 LANGUAGES CXX)
+project(po9_210655_lab1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -16,12 +16,12 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 
-add_executable(laba8
+add_executable(po9_210655_lab1
   main.cpp
   mainwindow.cpp
   mainwindow.h
   mainwindow.ui
 )
-target_link_libraries(laba8 Qt${QT_VERSION_MAJOR}::Core)
-target_link_libraries(laba8 Qt6::Widgets)
+target_link_libraries(po9_210655_lab1 Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(po9_210655_lab1 Qt6::Widgets)
 
