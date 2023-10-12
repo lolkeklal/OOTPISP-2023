@@ -1,5 +1,4 @@
 ﻿#include "mainwindow.h"
-or
 #include "textreviwer.h"
 #include <QApplication>
 
