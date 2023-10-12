@@ -16,8 +16,10 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
           ref: ${{ github.event.pull_request.head.sha }}
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v3
       - name: Install sonar-scanner and build-wrapper
-        uses: SonarSource/sonarcloud-github-c-cpp@v2
+        uses: sonarsource/sonarcloud-github-action@master
       - name: Run build-wrapper
         run: |
           cmake . -B build	  
