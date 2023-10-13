@@ -32,7 +32,7 @@ TextEditor::TextEditor(const QString &fileName, QWidget *parent)
     connect(ui->textEdit, SIGNAL(copyAvailable(bool)), ui->actionCopy, SLOT(setEnabled(bool)));
     connect(ui->actionRedo, SIGNAL(triggered()), ui->textEdit, SLOT(redo()));
 
-    loadFile(fileName);
+    dup_ldFl(fileName);
 }
 
 TextEditor::~TextEditor()
@@ -88,13 +88,13 @@ void TextEditor::on_actionSelectFont_triggered()
 }
 
 bool TextEditor::saveFile(){
-    if (this->m_fileName.isNull())
+    if (this->dup_m_flNm.isNull())
         return saveFileAs();
 
-    QFile dup_fl(this->m_fileName);
+    QFile dup_fl(this->dup_m_flNm);
     if (!dup_fl.open(QIODevice::ReadOnly | QIODevice::Text)){
         QMessageBox::warning(this, "Warning", "The file is not open");
-        setFileName(QString());
+        dup_stFlNm(QString());
         return false;
     }
 
@@ -116,10 +116,10 @@ void TextEditor::documentModified(){
 }
 
 
-void TextEditor::setFileName(const QString &fileName) {
-    m_fileName = fileName;
+void TextEditor::dup_stFlNm(const QString &fileName) {
+    dup_m_flNm = fileName;
     this->setWindowTitle(QString("%1[*] - %2")
-                       .arg(m_fileName.isNull() ? "untitled" : QFileInfo(m_fileName).fileName())
+                       .arg(dup_m_flNm.isNull() ? "untitled" : QFileInfo(dup_m_flNm).fileName())
                        .arg(QApplication::applicationName())
                    );
 }
@@ -131,23 +131,23 @@ void TextEditor::on_actionOpen_triggered()
                                                     QDir::currentPath(), "Text documents (*.txt)");
     if (dup_fileName.isNull())
         return;
-    if (this->m_fileName.isNull() && !this->isWindowModified())
-        loadFile(dup_fileName);
+    if (this->dup_m_flNm.isNull() && !this->isWindowModified())
+        dup_ldFl(dup_fileName);
     else {
         TextEditor* text_editor = new TextEditor(dup_fileName);
         text_editor->show();
     }
 }
 
-void TextEditor::loadFile(const QString &fileName){
+void TextEditor::dup_ldFl(const QString &fileName){
     if (fileName.isNull()){
-        setFileName(QString());
+        dup_stFlNm(QString());
         return;
     }
     QFile file(fileName);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
         QMessageBox::warning(this, "Error", "The file is not open");
-        setFileName(QString());
+        dup_stFlNm(QString());
         return;
     }
 
@@ -156,15 +156,15 @@ void TextEditor::loadFile(const QString &fileName){
     file.close();
 
     setWindowModified(false);
-    setFileName(fileName);
+    dup_stFlNm(fileName);
 }
 
 bool TextEditor::saveFileAs(){
     QString dup_fileName = QFileDialog::getSaveFileName(this, "Save document",
-                                                    m_fileName.isNull() ? QDir::currentPath() : m_fileName,
+                                                    dup_m_flNm.isNull() ? QDir::currentPath() : dup_m_flNm,
                                                     "Text documents (*.txt)");
     if (dup_fileName.isNull())
         return false;
-    setFileName(dup_fileName);
+    dup_stFlNm(dup_fileName);
     return saveFile();
 }

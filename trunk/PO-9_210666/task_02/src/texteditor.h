@@ -19,9 +19,9 @@ class TextEditor : public QMainWindow
     Q_OBJECT
 
 private:
-    void setFileName(const QString &fileName);
-    void loadFile(const QString &fileName);
-    QString m_fileName;
+    void dup_stFlNm(const QString &fileName);
+    void dup_ldFl(const QString &fileName);
+    QString dup_m_flNm;
     Ui::TextEditor *ui;
 
 public:
