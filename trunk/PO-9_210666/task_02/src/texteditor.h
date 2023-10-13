@@ -1,14 +1,14 @@
 #ifndef TEXTEDITOR_H
 #define TEXTEDITOR_H
 
+#include <QFileInfo>
 #include <QMainWindow>
+#include <QFile>
 #include <QCloseEvent>
-#include <QMessageBox>
 #include <QFontDialog>
 #include <QFileDialog>
 #include <QSettings>
-#include <QFile>
-#include <QFileInfo>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TextEditor; }
@@ -18,29 +18,29 @@ class TextEditor : public QMainWindow
 {
     Q_OBJECT
 
-protected:
-    void closeEvent(QCloseEvent *e);
+private:
+    void setFileName(const QString &fileName);
+    void loadFile(const QString &fileName);
+    QString m_fileName;
+    Ui::TextEditor *ui;
 
 public:
     TextEditor(const QString &fileName=QString(), QWidget *parent = nullptr);
     ~TextEditor();
 
+protected:
+    void closeEvent(QCloseEvent *event);
+
 private slots:
-    void on_actionNew_triggered();
     void documentModified();
-
-    bool saveFile();
-    bool saveFileAs();
-
-    void on_actionSelectFont_triggered();
+    void on_actionNew_triggered();
     void on_actionAbout_triggered();
+    bool saveFile();
     void on_actionOpen_triggered();
+    bool saveFileAs();
+    void on_actionSelectFont_triggered();
 
-private:
-    Ui::TextEditor *ui;
-    QString m_fileName;
 
-    void loadFile(const QString &fileName);
-    void setFileName(const QString &fileName);
+
 };
 #endif // TEXTEDITOR_H

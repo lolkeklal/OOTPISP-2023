@@ -1,19 +1,17 @@
 #include "texteditor.h"
-
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    a.setApplicationName("Text Editor");
-    a.setApplicationVersion("0.1");
+    QApplication app(argc, argv);
 
-    a.setOrganizationName("ExampleSoft");
-    a.setOrganizationDomain("example.com");
+    app.setOrganizationDomain("example.com");
+    app.setOrganizationName("ExampleSoft");
+    app.setWindowIcon(QIcon(":/icons/images/new.png"));
+    app.setApplicationVersion("0.1");
+    app.setApplicationName("Text Editor");
 
-    a.setWindowIcon(QIcon(":/icons/images/new.png"));
-
-    TextEditor w;
-    w.show();
-    return a.exec();
+    TextEditor txtEdit;
+    txtEdit.show();
+    return app.exec();
 }
