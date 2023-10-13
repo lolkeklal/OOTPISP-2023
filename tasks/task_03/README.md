@@ -4,7 +4,7 @@
 
 ***
 
-**Контейнеры** — это **[классы](https://ravesli.com/urok-113-klassy-obekty-i-metody-klassov/)** общего назначения, которые хранят в себе значения заданного типа. В языке С++ имеется свой набор контейнеров, который называется **[STL](https://ravesli.com/urok-196-standartnaya-biblioteka-shablonov-stl/)**.
+**Контейнеры** — это [классы](https://ravesli.com/urok-113-klassy-obekty-i-metody-klassov/) общего назначения, которые хранят в себе значения заданного типа. В языке С++ имеется свой набор контейнеров, который называется [STL](https://ravesli.com/urok-196-standartnaya-biblioteka-shablonov-stl/).
 
 Стоит отметить, что идеологии контейнеров Qt и STL, при всей своей схожести, отличаются в следующем:
 
