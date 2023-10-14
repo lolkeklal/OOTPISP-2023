@@ -1,6 +1,8 @@
 #include "widget.h"
 #include "./ui_widget.h"
 
+
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -107,5 +109,40 @@ void Widget::setColor()
 Widget::~Widget()
 {
     delete ui;
+}
+
+
+
+Widget1::Widget1(QWidget *parent)
+    : QWidget(parent)
+{
+    textEdit = new QTextEdit(this);
+    button = new QPushButton("Открыть файл", this);
+
+    connect(button, &QPushButton::clicked, this, &Widget1::openFile);
+
+    QVBoxLayout* layout = new QVBoxLayout(this);
+    layout->addWidget(textEdit);
+    layout->addWidget(button);
+
+    setLayout(layout);
+}
+
+void Widget1::openFile()
+{
+    QString fileName = QFileDialog::getOpenFileName(this, "Выберите файл", "", "Текстовые файлы (*.txt)");
+
+    QFile file(fileName);
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        QTextStream in(&file);
+        QString fileContent = in.readAll();
+        textEdit->setPlainText(fileContent);
+        file.close();
+    }
+}
+
+Widget1::~Widget1()
+{
 }
 

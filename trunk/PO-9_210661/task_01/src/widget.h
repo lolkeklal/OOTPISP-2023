@@ -8,7 +8,12 @@
 #include <QSlider>
 #include <QGridLayout>
 #include <QPlainTextEdit>
-
+#include <QTextEdit>
+#include <QPushButton>
+#include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -43,4 +48,22 @@ private:
 private:
     Ui::Widget *ui;
 };
+
+
+class Widget1 : public QWidget
+{
+    Q_OBJECT
+
+public:
+    Widget1(QWidget *parent = nullptr);
+    ~Widget1();
+
+private slots:
+    void openFile();
+
+private:
+    QTextEdit* textEdit;
+    QPushButton* button;
+};
+
 #endif // WIDGET_H
