@@ -35,7 +35,7 @@
 |12|Марзан Андрей | [Nenroin](https://github.com/Nenroin) | [210661](./trunk/PO-9_210661/) | :white_check_mark: | :white_check_mark: |||||||||
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав |||||||||||||
-|15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
+|[15](./trunk/PO-9_210664/)|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | 210664 | :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
 |16|Николайчик Николай |||||||||||||
 |17|Ничингер Кирилл |||||||||||||
 |18|Оводок Вадим |||||||||||||
