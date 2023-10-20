@@ -14,4 +14,4 @@ add_executable(po9_210661_task_01
     widget.h
     widget.ui
 )
-target_link_libraries(task_01 Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(po9_210661_task_01 Qt${QT_VERSION_MAJOR}::Widgets)
