@@ -8,7 +8,7 @@ set(CMAKE_PREFIX_PATH $ENV{QTDIR})
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-add_executable(task_01
+add_executable(po9_210661_task_01
     main.cpp
     widget.cpp
     widget.h
