@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(task_01 VERSION 2023.10.04.0 LANGUAGES CXX)
+project(task_01 LANGUAGES CXX)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
