@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lab4 VERSION 0.1 LANGUAGES CXX)
+project(PO-9_210656 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -19,9 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
 )
 
-add_executable(lab4
+add_executable(PO-9_210656
     ${PROJECT_SOURCES}
 )
 
-target_link_libraries(lab4 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
+target_link_libraries(PO-9_210656 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
