@@ -37,7 +37,7 @@
 |14|Мельничук Владислав |||||||||||||
 |[15](./trunk/PO-9_210664/)|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | 210664 | :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
 |16|Николайчик Николай |||||||||||||
-|17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|210666|:white_check_mark:|:white_check_mark:|||||||||
+|17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|210666|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
 |18|Оводок Вадим |||||||||||||
 |19|Солышко Дмитрий |||||||||||||
 |20|Ступак Дмитрий |||||||||||||
