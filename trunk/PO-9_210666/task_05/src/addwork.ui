@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddWork</class>
+ <widget class="QDialog" name="AddWork">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="vidEditLine">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addWorkButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>351</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add record</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="vidLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>vid</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="summaLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>summa</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="familyLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>worker id</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="summaEditLine">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="workersIdComboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2023</year>
+     <month>10</month>
+     <day>20</day>
+    </datetime>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::MonthSection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>MM.yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dateLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>0</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>month</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>workersIdComboBox</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>vidEditLine</tabstop>
+  <tabstop>summaEditLine</tabstop>
+  <tabstop>addWorkButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
