@@ -36,7 +36,7 @@
 |13|Матюшик Екатерина |||||||||||||
 |14|Мельничук Владислав |||||||||||||
 |15|Мисиюк Алексей | [11ALX11](https://github.com/11ALX11) | [210664](./trunk/PO-9_210664/) | :white_check_mark: | :white_check_mark: | :white_check_mark: || :white_check_mark: ||||||
-|16|Николайчик Николай |||||||||||||
+|16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: |||||||||
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|210666|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||||
 |18|Оводок Вадим |||||||||||||
 |19|Солышко Дмитрий |||||||||||||
