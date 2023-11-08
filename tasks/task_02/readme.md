@@ -116,6 +116,7 @@ void TextEditor::on_actionNew_triggered()
 
 Изменения документа можно отслеживать с помощью сигнала *textChanged* класса *QTextEdit*. Создайте приватный слот *documentEdited210643* в вашем классе *TextEditor*. В конструкторе соедините сигнал редактора с вашим слотом. В слоте устанавливайте свойство *windowModified* в *true*.
 
+
 ```
 При чтении документации вы не найдёте свойства windowModified в классе QTextEditor.
 Оно определено в классе QWidget, от которого наследуется QTextEditor. Его можно
