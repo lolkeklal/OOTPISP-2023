@@ -1,4 +1,4 @@
-# OOTPISP-2023
+﻿# OOTPISP-2023
 
 ## Группа ПО-8
 
@@ -39,7 +39,7 @@
 |16|Николайчик Николай | [ProstoMyk](https://github.com/ProstoMyk) | [210665](./trunk/PO-9_210665) | :white_check_mark: | :white_check_mark: |||||||||
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|210666|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: |||||||||
-|19|Солышко Дмитрий |||||||||||||
+|19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:|||||||||
 |20|Ступак Дмитрий |||||||||||||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |||||||||||||
