@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\copy.png" />
+    <Resource Include="Resources\Icons\cut.png" />
+    <Resource Include="Resources\Icons\new.png" />
+    <Resource Include="Resources\Icons\open.png" />
+    <Resource Include="Resources\Icons\paste.png" />
+    <Resource Include="Resources\Icons\save.png" />
+  </ItemGroup>
+
+</Project>
