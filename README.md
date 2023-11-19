@@ -27,7 +27,7 @@
 |4|Дарашкевич Дмитрий |||||||||||||
 |5|Зейденс Никита |||||||||||||
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|210655|:white_check_mark:|:white_check_mark:|||||||||
-|7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|||||
+|7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅||
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||||||
 |9|Кухарев Дмитрий |||||||||||||
 |10|Кучко Ярослав |||||||||||||
