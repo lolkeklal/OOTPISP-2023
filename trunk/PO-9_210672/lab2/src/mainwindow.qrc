@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>resources/tables/t_7.png</file>
+        <file>resources/tables/t1_1.png</file>
+        <file>resources/tables/t4_1.png</file>
+        <file>resources/tables/t4_2.png</file>
+        <file>resources/tables/t4_3.png</file>
+        <file>resources/tables/t6.png</file>
+    </qresource>
+</RCC>
