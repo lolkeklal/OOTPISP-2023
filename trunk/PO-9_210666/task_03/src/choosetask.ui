@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChooseTask</class>
+ <widget class="QMainWindow" name="ChooseTask">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>268</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="task4PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>118</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task3PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>82</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task2PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>46</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task5PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>154</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task1PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="task6PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>250</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>task6</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

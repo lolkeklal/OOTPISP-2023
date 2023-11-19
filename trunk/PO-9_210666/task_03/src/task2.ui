@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Task2</class>
+ <widget class="QMainWindow" name="Task2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="matrix1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>1</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+   </widget>
+   <widget class="QPushButton" name="regenerateMatrix1PushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>281</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>regenerate matrix</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="matrix1ColsLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Cols count</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="evenElemsLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>441</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>even = </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="oddElemsLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>123</y>
+      <width>441</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>odd = </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="matrix2RowsLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Rows count</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="regenerateMatrix2PushButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>regenerate matrix</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="matrix2ColsLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Cols count</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="matrix2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>431</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+   </widget>
+   <widget class="QComboBox" name="matrix2SumTypeComboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>141</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>sum of odd cols</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sum of even cols</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="getMatrix2SumPushButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>500</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>get sum</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="matrix2SumLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>500</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sum = </string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>matrix1ColsLineEdit</tabstop>
+  <tabstop>regenerateMatrix1PushButton</tabstop>
+  <tabstop>matrix1</tabstop>
+  <tabstop>matrix2RowsLineEdit</tabstop>
+  <tabstop>matrix2ColsLineEdit</tabstop>
+  <tabstop>regenerateMatrix2PushButton</tabstop>
+  <tabstop>matrix2</tabstop>
+  <tabstop>matrix2SumTypeComboBox</tabstop>
+  <tabstop>getMatrix2SumPushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
