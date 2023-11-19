@@ -5,7 +5,7 @@
 |№|ФИО|GitHub username| № зачетки/студенческого|#0|#1|#2|#3|#4|#5|#6|#7|#8|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|Кодиров Бехруз| | | | | | | | | | | | |
-|2|Липовик Илья|[KARMA-143](https://github.com/KARMA-143)|210639|:white_check_mark:|:white_check_mark:| | | | | | | | |
+|2|Липовик Илья|[KARMA-143](https://github.com/KARMA-143)|[210639](./trunk/PO-8_210639/)|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||||||
 |3|Лобарев Антон| | | | | | | | | | | | |
 |4|Макаревич Екатерина|[Mkrshkk](https://github.com/Mkrshkk)| 210641 |:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||||||
 |5|Печко Валерия| | | | | | | | | | | | |
