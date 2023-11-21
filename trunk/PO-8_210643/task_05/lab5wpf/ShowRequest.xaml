@@ -1,0 +1,44 @@
+﻿<Window x:Class="lab5wpf.ShowRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:lab5wpf"
+        mc:Ignorable="d"
+        Title="ShowRequest" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DataGrid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10"></DataGrid>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,10,10">
+            <Label x:Name="LabelState" Content="State name:"></Label>
+            <TextBox x:Name="TextBoxState"></TextBox>
+            <Label x:Name="LabelTin" Content="Reys t in:"></Label>
+            <TextBox x:Name="TextBoxTin"></TextBox>
+            <Label x:Name="LabelTall" Content="Reys t all:"></Label>
+            <TextBox x:Name="TextBoxTall"></TextBox>
+            <Label x:Name="LabelTout" Content="Reys t out:"></Label>
+            <TextBox x:Name="TextBoxTout"></TextBox>
+        </StackPanel>
+        <GroupBox Grid.Row="1" Grid.Column="0" Header="Select Request" Padding="5">
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <RadioButton x:Name="RadioButtonState" Checked="RadioButtonState_OnChecked" Content="State name" Margin="3"></RadioButton>
+                <RadioButton x:Name="RadioButtonReysTime" Checked="RadioButtonReysTime_OnChecked" Content="Reys time" Margin="3"></RadioButton>
+                <Label Content="Select time to enter"></Label>
+                <CheckBox x:Name="CheckBoxTin" Content="T__in"></CheckBox>
+                <CheckBox x:Name="CheckBoxTall" Content="T__all"></CheckBox>
+                <CheckBox x:Name="CheckBoxTout" Content="T__out"></CheckBox>
+                <Button x:Name="ButtonFind" Click="ButtonFind_OnClick" Content="Find data" Margin="0,20,0,0"></Button>
+            </StackPanel>
+            
+        </GroupBox>
+        
+        
+    </Grid>
+</Window>
