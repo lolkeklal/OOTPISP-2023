@@ -40,7 +40,7 @@
 |17|Ничингер Кирилл |[HeyJIOBUM](https://github.com/HeyJIOBUM)|[210666](./trunk/PO-9_210666/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||
 |18|Оводок Вадим | [Vodemus](https://github.com/Vodemus) | [210667](./trunk/PO-9_210667/)| :white_check_mark: | :white_check_mark: | :white_check_mark: ||||||||
 |19|Солышко Дмитрий |[dimasolyshko](https://github.com/dimasolyshko)|[210668](./trunk/PO-9_210668/)|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||:white_check_mark:|||
-|20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:||||||||||
+|20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|||||||||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |||||||||||||
 |23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](https://github.com/brstu/OOTPISP-2023/tree/master/trunk/PO-9_210672)|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
