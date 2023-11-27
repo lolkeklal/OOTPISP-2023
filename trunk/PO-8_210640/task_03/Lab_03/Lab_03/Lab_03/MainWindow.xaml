@@ -1,0 +1,281 @@
+﻿<Window x:Class="Lab_03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Task 1">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox 
+                        Name="Task1TextBox" 
+                        HorizontalAlignment="Center" 
+                        TextWrapping="Wrap" 
+                        VerticalAlignment="Center" 
+                        Width="120" 
+                        TextChanged="Task1TextBox_TextChanged"/>
+
+                    <Label 
+                        Name="Task1Label" 
+                        Content="Enter A" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,132,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="120" Height="56" 
+                        VerticalContentAlignment="Center" 
+                        HorizontalContentAlignment="Center"/>
+
+                    <Button 
+                        Name="Task1Button" 
+                        Content="Confirm" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,217,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="120" 
+                        Click="Task1Button_Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Task 2">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl>
+                        <TabItem Header="Part 1">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid 
+                                    Name="Task2Part1Datagrid" 
+                                    Initialized="Task2Part1Datagrid_Initialized" 
+                                    CanUserAddRows="True" 
+                                    CanUserDeleteRows="True" 
+                                    AutoGenerateColumns="False"
+                                    SelectionUnit="FullRow" Margin="0,0,638,0">
+
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="#" 
+                                        IsReadOnly="True" 
+                                        CanUserResize="False" 
+                                        Width="auto" 
+                                        Binding="{Binding Id}"/>
+
+                                        <DataGridTextColumn Header="Value" 
+                                        CanUserResize="False" 
+                                        Width="auto"  
+                                        Binding="{Binding Value}"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <Button 
+                                    Content="Reverse" 
+                                    HorizontalAlignment="Left" 
+                                    Margin="191,285,0,0" 
+                                    VerticalAlignment="Top" 
+                                    Width="136" 
+                                    Click="Task2Part1Reverse_Button_Click"/>
+
+                                <ListBox x:Name="Task2Part1ListBox" Margin="191,0,461,108"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Part 2">
+                            <Grid Background="#FFE5E5E5">
+                                <UniformGrid 
+                                    Name="Task2Part2UniformGrid" 
+                                    Columns="11" 
+                                    Rows="11" 
+                                    ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                                    ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                                    Margin="145,10,10,10"
+                                    Initialized="Task2Part2UniformGrid_Initialized">
+
+                                </UniformGrid>
+                                <Label 
+                                    Name="Task2Part2Label" 
+                                    Content="0" 
+                                    HorizontalContentAlignment="Center" 
+                                    HorizontalAlignment="Left" 
+                                    Margin="10,86,0,0" 
+                                    VerticalAlignment="Top" 
+                                    Width="120"/>
+
+                                <ComboBox 
+                                    Name="Task2Part2KComboBox" 
+                                    HorizontalAlignment="Left" 
+                                    Margin="10,18,0,0" 
+                                    VerticalAlignment="Top" 
+                                    Width="120" 
+                                    Initialized="Task2Part2KComboBox_Initialized"/>
+
+                                <ComboBox 
+                                    Name="Task2Part2TypeComboBox" 
+                                    HorizontalAlignment="Left" 
+                                    Margin="10,45,0,0" 
+                                    VerticalAlignment="Top" 
+                                    Width="120" 
+                                    SelectedIndex="0"  
+                                    Initialized="Task2Part2TypeComboBox_Initialized"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Task 3">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox 
+                        Name="Task3ListBox" 
+                        Margin="10,0,632,0" 
+                        Initialized="Task3ListBox_Initialized"/>
+
+                    <RadioButton
+                        Name="Task3FirstRadioButton" 
+                        GroupName="Task3AddType" 
+                        Content="First" 
+                        HorizontalAlignment="Left" 
+                        Margin="182,54,0,0" 
+                        VerticalAlignment="Top"/>
+
+                    <RadioButton 
+                        GroupName="Task3AddType" 
+                        IsChecked="True" 
+                        Content="Last" 
+                        HorizontalAlignment="Left" 
+                        Margin="182,74,0,0" 
+                        VerticalAlignment="Top"/>
+
+                    <TextBox
+                        Name="Task3TextBox" 
+                        HorizontalAlignment="Left" 
+                        Margin="182,22,0,0"
+                        TextWrapping="Wrap"
+                        VerticalAlignment="Top" 
+                        Width="120" 
+                        TextChanged="Task3TextBox_TextChanged"/>
+
+                    <Button 
+                        Name="Task3ConfirmButton" 
+                        Content="Add" 
+                        HorizontalAlignment="Left" 
+                        Margin="182,105,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="120" 
+                        IsEnabled="False" 
+                        Click="Task3ConfirmButton_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Task 4">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox 
+                        Name="Task4StackListBox" 
+                        Margin="10,10,609,136" 
+                        Height="260" 
+                        Initialized="Task4StackListBox_Initialized"/>
+
+                    <ListBox 
+                        Name="Task4QueueListBox" 
+                        Margin="609,10,10,136" 
+                        Height="260" 
+                        Initialized="Task4QueueListBox_Initialized"/>
+
+                    <Button 
+                        Content="Abs difference" 
+                        HorizontalAlignment="Left" 
+                        Margin="626,275,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="142" 
+                        Click="Task4QueueButton_Click"/>
+
+                    <Label 
+                        Name="Task4Label" 
+                        HorizontalAlignment="Left" 
+                        Margin="200,78,0,0" 
+                        VerticalAlignment="Top" 
+                        Height="62" 
+                        Width="180" 
+                        Initialized="Task4Label_Initialized"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Task 5">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl>
+                        <TabItem Header="Brands">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid 
+                                    Name="Task5BrandDataGrid" 
+                                    AutoGenerateColumns="False" 
+                                    IsReadOnly="True" 
+                                    EnableColumnVirtualization="True" 
+                                    EnableRowVirtualization="True"
+                                    Initialized="Task5BrandDataGrid_Initialized"
+                                    Loaded="Task5BrandDataGrid_Loaded">
+
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                                        <DataGridTextColumn Header="Country" Binding="{Binding Country}"/>
+                                        <DataGridTextColumn Header="DeliveredTo" Binding="{Binding DeliveredTo}"/>
+                                    </DataGrid.Columns>
+
+                                    <DataGrid.Resources>
+                                        <Style TargetType="{x:Type DataGridRow}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding DeliveredTo}" Value="All">
+                                                    <Setter Property="Background" Value="LightGreen" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding DeliveredTo}" Value="Some">
+                                                    <Setter Property="Background" Value="LightYellow" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding DeliveredTo}" Value="None">
+                                                    <Setter Property="Background" Value="LightPink" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding DeliveredTo}" Value="Error">
+                                                    <Setter Property="Background" Value="LightCoral" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </DataGrid.Resources>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Supplies">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid 
+                                    Name="Task5SupplyDataGrid" 
+                                    AutoGenerateColumns="False" 
+                                    EnableColumnVirtualization="True" 
+                                    EnableRowVirtualization="True" 
+                                    Initialized="Task5SupplyDataGrid_Initialized">
+
+                                    <DataGrid.Columns>
+                                        <DataGridComboBoxColumn Header="Brand" SelectedItemBinding="{Binding Brand}"/>
+                                        <DataGridComboBoxColumn Header="Country" SelectedItemBinding="{Binding Country}"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Task 6">
+                <Grid Background="#FFE5E5E5">
+                    <Button 
+                        Content="Choose file" 
+                        HorizontalAlignment="Left" 
+                        Margin="10,23,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="100" 
+                        Click="Task6FileButton_Click"/>
+
+                    <ListBox 
+                        Name="Task6ListBox" 
+                        Margin="10,48,684,100" 
+                        Height="256"/>
+
+                    <Label 
+                        Name="Task6Label" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,102,0,0" 
+                        VerticalAlignment="Top" 
+                        Height="150" 
+                        Width="300"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
