@@ -155,7 +155,7 @@ public:
         if (instance == nullptr) {
             instance = new SingletonLinuxFactory();
         }
-        return instance;
+        return instance; //210647
     }
 
     List* createList() const override {

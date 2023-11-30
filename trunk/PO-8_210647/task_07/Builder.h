@@ -14,7 +14,7 @@ public:
 class Body {
 public:
     std::string getInfo() const {
-        return "Robot Body";
+        return "Robot Body"; //210647
     }
 };
 
