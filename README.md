@@ -43,6 +43,6 @@
 |20|Ступак Дмитрий |[Papriosa](https://github.com/Papirosa225) | [210669](./trunk/PO-9_210669/)|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||:white_check_mark:||
 |21|Тупик Юлия |||||||||||||
 |22|Тусюк Тимофей |[HuKtoHe3HaeT](https://github.com/HuKtoHe3HaeT)|[210671](./trunk/PO-9_210671/)|||||||||:white_check_mark:||
-|23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](./trunk/PO-9_210672/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||
+|23|Харитонович Захар |[ZakharTS](https://github.com/ZakharTS)|[210672](./trunk/PO-9_210672/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:||
 |24|Шубич Дарья|[Dashubaa](https://github.com/Dashubaa)|[210674](./trunk/PO-9_210674)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||
 |25|Зайд Халдун А. Алькатури|||||||||||||
