@@ -1,0 +1,14 @@
+﻿<Window x:Class="lab3.Task1Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:lab3"
+        mc:Ignorable="d"
+        Title="Task1Window" SizeToContent="Height" Width="100">
+    <StackPanel>
+        <TextBox Name="TextBoxInput" Margin="3"></TextBox>
+        <Button Name="RunButton" Click="RunButton_OnClick" Content="Run" Margin="3"></Button>
+        <Label Name="ResultLAbel" Content="Result: " Margin="3"></Label>
+    </StackPanel>
+</Window>
