@@ -1,0 +1,3 @@
+[submodule "trunk/PO-9_210674/task_06/trunk/PO-9_210674/task_06/googletest"]
+	path = trunk/PO-9_210674/task_06/trunk/PO-9_210674/task_06/googletest
+	url = git@github.com:google/googletest.git
